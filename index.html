@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calendário</title>
+
+		<link href="fontawesome/css/all.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="fixed">
+				<h2 id="year"></h2>
+
+				<h4>Você pode colorir o seu dia de acordo com seu humor</h4>
+
+				<p>Selecione seu humor:</p>
+
+				<div class="moods_container">
+					<button class="mood mood_1" id="mood_1">
+						<i class="far fa-laugh"></i>
+					</button>
+					<button class="mood mood_2" id="mood_2">
+						<i class="far fa-smile"></i>
+					</button>
+					<button class="mood mood_3" id="mood_3">
+						<i class="far fa-meh"></i>
+					</button>
+					<button class="mood mood_4" id="mood_4">
+						<i class="far fa-frown"></i>
+					</button>
+					<button class="mood mood_5" id="mood_5">
+						<i class="far fa-sad-tear"></i>
+					</button>
+				</div>
+
+				<button id="randomize" class="action_btn randomize">
+					<i class="fas fa-random"></i>
+				</button>
+
+				<button id="clear" class="action_btn clear">
+					<i class="fas fa-sync"></i>
+				</button>
+			</div>
+
+			<div id="calendar" class="calendar"></div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
